@@ -1,0 +1,18 @@
+CLI for creating controller (--no-spec is without test file):
+nest g controller tasks --no-spec
+
+CLI for creating service:
+nest g service tasks --no-spec
+
+Validation pipes can have constructor e.x 
+@Body('status', new TaskStatusValidationPipe(arguments)) 
+
+TypeORM config:
+entities:[__dirname+'/../**/*.entity.ts'] - how to find the entities files
+
+
+Node environment variables are added like this in the package.json file
+ "test": "NODE_ENV=development jest",
+
+ When deploying on production on ASW, the frontend app is upload on S3 and the 
+ backend project on ElasticBeanstalk

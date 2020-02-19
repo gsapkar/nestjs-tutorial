@@ -1,0 +1,6 @@
+server:
+  ## here goes the origin from the S3 bucket
+  origin: "frontend_url"
+
+db:
+  synchronize: false
